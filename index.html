@@ -1,0 +1,1018 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>一区高淸一区_高清视频品牌与创作者社区_精选片单与更新动态</title>
+<meta name="description" content="一区高淸一区是一家高清视频品牌与创作者社区，提供精选片单、最新更新与深度解析，涵盖纪录片、美食、旅行、影像创作等频道，适合喜欢高清画质与原创内容的中文观众。">
+<meta name="keywords" content="高清视频社区,原创影像作品,纪录片片单,旅行影像,美食纪录">
+<style>
+:root{
+  --ink:#0e1116;
+  --ink-2:#1b2230;
+  --paper:#f6f7f9;
+  --paper-2:#ffffff;
+  --line:#e3e6ec;
+  --muted:#5c6675;
+  --muted-2:#8b95a5;
+  --brand:#0f5cff;
+  --brand-deep:#0a3fb3;
+  --brand-soft:#e8f0ff;
+  --accent:#ff5a3c;
+  --accent-soft:#fff0ec;
+  --gold:#c98a12;
+  --ok:#0f9d6b;
+  --radius-s:8px;
+  --radius:14px;
+  --radius-l:22px;
+  --shadow-s:0 1px 2px rgba(16,24,40,.06);
+  --shadow:0 8px 24px rgba(16,24,40,.08);
+  --shadow-l:0 20px 50px rgba(16,24,40,.14);
+  --ann-h:38px;
+  --head-h:66px;
+  --maxw:1320px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--font);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;}
+h1,h2,h3,h4,p,ul,ol,figure,blockquote{margin:0;}
+ul,ol{padding:0;list-style:none;}
+:focus-visible{outline:3px solid var(--brand);outline-offset:2px;border-radius:4px;}
+
+/* ---------- sticky announce + header ---------- */
+.sticky-wrap{position:sticky;top:0;z-index:60;}
+.announce{
+  height:var(--ann-h);
+  background:linear-gradient(90deg,var(--ink) 0%,var(--ink-2) 55%,#23304a 100%);
+  color:#dbe4f5;
+  display:flex;align-items:center;
+  font-size:13px;
+  overflow:hidden;
+}
+.announce .wrap{display:flex;align-items:center;gap:14px;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 20px;}
+.announce .tag{
+  flex:0 0 auto;background:var(--accent);color:#fff;
+  font-size:11px;font-weight:700;letter-spacing:.08em;
+  padding:2px 8px;border-radius:4px;
+}
+.announce .txt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.announce .txt b{color:#fff;font-weight:600;}
+.announce a{color:#9fc0ff;white-space:nowrap;}
+.announce a:hover{color:#fff;text-decoration:underline;}
+
+.site-head{
+  background:rgba(255,255,255,.94);
+  backdrop-filter:saturate(160%) blur(10px);
+  border-bottom:1px solid var(--line);
+  height:var(--head-h);
+}
+.site-head .wrap{
+  max-width:var(--maxw);margin:0 auto;padding:0 20px;height:100%;
+  display:flex;align-items:center;gap:26px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.brand .mark{width:34px;height:34px;flex:0 0 auto;}
+.brand .name{font-size:19px;font-weight:800;letter-spacing:.02em;color:var(--ink);white-space:nowrap;}
+.brand .name em{font-style:normal;color:var(--brand);}
+.main-nav{display:flex;align-items:center;gap:4px;flex:1 1 auto;min-width:0;overflow:hidden;}
+.main-nav a{
+  font-size:14.5px;color:var(--ink-2);padding:8px 11px;border-radius:8px;
+  white-space:nowrap;font-weight:500;transition:background .15s,color .15s;
+}
+.main-nav a:hover{background:var(--brand-soft);color:var(--brand-deep);}
+.head-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.search{position:relative;display:flex;align-items:center;}
+.search input{
+  width:184px;height:36px;border:1px solid var(--line);border-radius:999px;
+  padding:0 36px 0 14px;font-size:13.5px;background:#f9fafc;color:var(--ink);
+  transition:border-color .15s,box-shadow .15s,width .2s;
+}
+.search input:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(15,92,255,.14);background:#fff;width:216px;}
+.search button{
+  position:absolute;right:4px;top:50%;transform:translateY(-50%);
+  width:28px;height:28px;border:none;border-radius:50%;background:var(--brand);color:#fff;
+  display:grid;place-items:center;cursor:pointer;
+}
+.search button:hover{background:var(--brand-deep);}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  height:36px;padding:0 16px;border-radius:999px;font-size:14px;font-weight:600;
+  border:1px solid transparent;cursor:pointer;transition:transform .12s,background .15s,box-shadow .15s;
+  white-space:nowrap;
+}
+.btn:active{transform:translateY(1px);}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 6px 16px rgba(15,92,255,.28);}
+.btn-primary:hover{background:var(--brand-deep);}
+.btn-ghost{background:#fff;border-color:var(--line);color:var(--ink-2);}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand);}
+.nav-toggle{display:none;width:38px;height:38px;border:1px solid var(--line);background:#fff;border-radius:10px;cursor:pointer;align-items:center;justify-content:center;}
+
+/* ---------- layout ---------- */
+.container{max-width:var(--maxw);margin:0 auto;padding:0 20px;}
+.layout{
+  display:grid;
+  grid-template-columns:182px minmax(0,1fr) 256px;
+  gap:26px;
+  align-items:start;
+  padding:26px 0 60px;
+}
+section[id],div[id].anchor{scroll-margin-top:calc(var(--ann-h) + var(--head-h) + 14px);}
+
+/* ---------- left channel ---------- */
+.chan{
+  position:sticky;top:calc(var(--ann-h) + var(--head-h) + 20px);
+  background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 12px;box-shadow:var(--shadow-s);
+}
+.chan h2{
+  font-size:11px;letter-spacing:.16em;color:var(--muted-2);
+  font-weight:700;margin:2px 6px 10px;
+}
+.chan ul{display:flex;flex-direction:column;gap:2px;}
+.chan a{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding:9px 10px;border-radius:9px;font-size:14px;color:var(--ink-2);font-weight:500;
+  transition:background .14s,color .14s;
+}
+.chan a:hover{background:var(--brand-soft);color:var(--brand-deep);}
+.chan a .n{font-size:11.5px;color:var(--muted-2);font-weight:600;}
+.chan .chan-note{
+  margin-top:12px;padding:12px 10px;border-top:1px dashed var(--line);
+  font-size:12px;color:var(--muted);line-height:1.6;
+}
+.chan .chan-note b{color:var(--brand);}
+
+/* ---------- hero ---------- */
+.hero{
+  grid-column:1 / -1;
+  position:relative;
+  border-radius:var(--radius-l);
+  overflow:hidden;
+  background:
+    radial-gradient(900px 380px at 12% -10%,rgba(15,92,255,.35),transparent 62%),
+    radial-gradient(700px 360px at 92% 8%,rgba(255,90,60,.24),transparent 60%),
+    linear-gradient(150deg,#0b1220 0%,#141d31 52%,#1d2a45 100%);
+  color:#eaf0fb;
+  padding:38px 40px 34px;
+  box-shadow:var(--shadow-l);
+}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:44px 44px;
+  mask-image:radial-gradient(70% 70% at 70% 30%,#000 0%,transparent 78%);
+}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:36px;align-items:center;}
+.hero .eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:.14em;font-weight:700;color:#9fc0ff;
+  background:rgba(15,92,255,.18);border:1px solid rgba(120,165,255,.32);
+  padding:5px 12px;border-radius:999px;margin-bottom:16px;
+}
+.hero .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 4px rgba(74,222,128,.18);}
+.hero h1{
+  font-size:clamp(30px,4.2vw,46px);
+  line-height:1.16;letter-spacing:-.01em;font-weight:800;color:#fff;
+  margin-bottom:14px;
+}
+.hero h1 span{background:linear-gradient(92deg,#7fb0ff,#c9dcff 60%,#ffb4a3);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hero .lede{font-size:15.5px;color:#b9c6dd;max-width:52ch;margin-bottom:22px;}
+.hero .lede b{color:#fff;font-weight:600;}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px;}
+.hero-actions .btn-primary{box-shadow:0 10px 26px rgba(15,92,255,.45);}
+.hero-actions .btn-outline{background:rgba(255,255,255,.06);border:1px solid rgba(160,190,255,.35);color:#dfe8fa;}
+.hero-actions .btn-outline:hover{background:rgba(255,255,255,.14);border-color:#8fb6ff;color:#fff;}
+.hero-stats{display:flex;flex-wrap:wrap;gap:26px;}
+.hero-stats .s b{display:block;font-size:22px;color:#fff;font-weight:800;line-height:1.2;}
+.hero-stats .s span{font-size:12.5px;color:#8fa1bf;letter-spacing:.04em;}
+
+/* hero visual */
+.hero-visual{position:relative;height:100%;min-height:250px;}
+.screen{
+  position:relative;border-radius:16px;overflow:hidden;
+  background:linear-gradient(160deg,#0a1120,#1a2740);
+  border:1px solid rgba(150,180,255,.22);
+  box-shadow:0 24px 60px rgba(3,8,20,.6);
+  aspect-ratio:16/10;
+}
+.screen .frame{position:absolute;inset:0;background:
+  radial-gradient(340px 200px at 30% 20%,rgba(15,92,255,.5),transparent 70%),
+  radial-gradient(300px 220px at 80% 85%,rgba(255,90,60,.36),transparent 70%),
+  linear-gradient(140deg,#0d1830,#1b2946 60%,#22304d);
+}
+.screen .scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.055) 0 1px,transparent 1px 3px);opacity:.7;}
+.screen .bar{position:absolute;left:0;right:0;bottom:0;height:34px;background:linear-gradient(0deg,rgba(0,0,0,.72),transparent);display:flex;align-items:center;gap:8px;padding:0 12px;}
+.screen .bar i{display:block;height:4px;border-radius:2px;background:rgba(255,255,255,.28);}
+.screen .bar i:first-child{width:38%;background:linear-gradient(90deg,#4d8dff,#8fb6ff);}
+.screen .badge-hd{
+  position:absolute;top:12px;left:12px;font-size:10.5px;font-weight:800;letter-spacing:.12em;
+  color:#08101f;background:#cfe0ff;padding:3px 8px;border-radius:5px;
+}
+.screen .cap{position:absolute;left:14px;bottom:46px;right:14px;}
+.screen .cap b{display:block;font-size:14.5px;color:#fff;font-weight:700;}
+.screen .cap span{font-size:11.5px;color:#a9bbd8;}
+.float-card{
+  position:absolute;right:-10px;bottom:-18px;width:182px;
+  background:#fff;color:var(--ink);border-radius:12px;padding:11px 12px;
+  box-shadow:0 18px 40px rgba(3,8,20,.42);
+  border:1px solid var(--line);
+}
+.float-card .t{font-size:11px;color:var(--muted-2);font-weight:700;letter-spacing:.1em;margin-bottom:5px;}
+.float-card .v{font-size:13.5px;font-weight:700;line-height:1.35;}
+.float-card .v em{font-style:normal;color:var(--accent);}
+.float-card .mini{display:flex;align-items:center;gap:6px;margin-top:8px;font-size:11.5px;color:var(--muted);}
+.float-card .mini .pulse{width:7px;height:7px;border-radius:50%;background:var(--ok);}
+
+/* ---------- main column ---------- */
+.col-main{min-width:0;display:flex;flex-direction:column;gap:26px;}
+.board{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;box-shadow:var(--shadow-s);
+}
+.board-hd{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:18px;flex-wrap:wrap;}
+.board-hd h2{font-size:20px;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:10px;}
+.board-hd h2::before{content:"";width:5px;height:19px;border-radius:3px;background:linear-gradient(180deg,var(--brand),#7fb0ff);}
+.board-hd .sub{font-size:13px;color:var(--muted);font-weight:500;}
+.board-hd .link{font-size:13px;color:var(--brand);font-weight:600;white-space:nowrap;}
+.board-hd .link:hover{text-decoration:underline;}
+
+/* overview */
+.overview p{font-size:15px;color:#2b3546;margin-bottom:13px;}
+.overview p:last-child{margin-bottom:0;}
+.overview .hl{background:linear-gradient(transparent 62%,var(--brand-soft) 62%);font-weight:600;}
+.ov-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px;}
+.ov-facts .f{border:1px solid var(--line);border-radius:10px;padding:11px 12px;background:#fbfcfe;}
+.ov-facts .f b{display:block;font-size:17px;font-weight:800;color:var(--brand-deep);line-height:1.3;}
+.ov-facts .f span{font-size:12px;color:var(--muted);}
+
+/* featured cards */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;
+  display:flex;flex-direction:column;transition:transform .16s,box-shadow .16s,border-color .16s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#cfdcf6;}
+.card .thumb{position:relative;aspect-ratio:4/3;overflow:hidden;background:#eef1f6;}
+.card .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
+.card:hover .thumb img{transform:scale(1.045);}
+.card .type{
+  position:absolute;top:10px;left:10px;font-size:11px;font-weight:700;
+  background:rgba(8,14,26,.78);color:#fff;padding:3px 8px;border-radius:5px;letter-spacing:.03em;
+  backdrop-filter:blur(4px);
+}
+.card .score{
+  position:absolute;top:10px;right:10px;font-size:12px;font-weight:800;color:#fff;
+  background:linear-gradient(120deg,var(--accent),#ff8a5c);padding:3px 8px;border-radius:5px;
+}
+.card .body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.card h3{font-size:15.5px;font-weight:700;line-height:1.4;}
+.card .desc{font-size:12.8px;color:var(--muted);line-height:1.65;}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto;}
+.tag{font-size:11px;color:var(--brand-deep);background:var(--brand-soft);padding:2px 8px;border-radius:999px;font-weight:600;}
+.tag.warm{color:#b23d20;background:var(--accent-soft);}
+.card .meta{display:flex;align-items:center;justify-content:space-between;font-size:11.5px;color:var(--muted-2);border-top:1px dashed var(--line);padding-top:8px;margin-top:2px;}
+.card .meta b{color:var(--accent);font-weight:700;}
+
+/* updates list */
+.updates{display:grid;grid-template-columns:1fr 1fr;gap:2px 22px;}
+.upd{
+  display:flex;gap:12px;padding:11px 8px;border-radius:9px;align-items:flex-start;
+  border-bottom:1px dashed var(--line);transition:background .14s;
+}
+.upd:hover{background:#f7faff;}
+.upd .time{flex:0 0 58px;font-size:11.5px;color:var(--muted-2);font-weight:600;padding-top:2px;}
+.upd .txt b{display:block;font-size:14px;font-weight:700;line-height:1.4;}
+.upd .txt span{font-size:12.5px;color:var(--muted);}
+.upd .pill{
+  flex:0 0 auto;font-size:10.5px;font-weight:700;padding:1px 7px;border-radius:4px;
+  background:var(--brand-soft);color:var(--brand-deep);margin-left:auto;
+}
+.upd .pill.new{background:#e9fbf3;color:#0b7a53;}
+
+/* categories */
+.cats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;}
+.cat{
+  border:1px solid var(--line);border-radius:12px;padding:14px;background:#fbfcfe;
+  transition:border-color .15s,background .15s,transform .15s;display:flex;flex-direction:column;gap:4px;
+}
+.cat:hover{border-color:var(--brand);background:#f4f8ff;transform:translateY(-2px);}
+.cat b{font-size:14.5px;font-weight:700;}
+.cat span{font-size:12px;color:var(--muted);line-height:1.55;}
+.cat i{font-style:normal;font-size:11.5px;color:var(--brand);font-weight:700;margin-top:4px;}
+
+/* deep dive */
+.deep h2{font-size:22px;}
+.deep h3{font-size:16px;font-weight:800;margin:20px 0 8px;padding-left:11px;border-left:3px solid var(--brand);line-height:1.4;}
+.deep p{font-size:14.8px;color:#2b3546;margin-bottom:11px;}
+.deep ul.bullets{margin:6px 0 14px;display:flex;flex-direction:column;gap:7px;}
+.deep ul.bullets li{position:relative;padding-left:18px;font-size:14.2px;color:#33405a;}
+.deep ul.bullets li::before{content:"";position:absolute;left:4px;top:.62em;width:6px;height:6px;border-radius:2px;background:var(--brand);}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 6px;}
+.compare .c{border:1px solid var(--line);border-radius:12px;padding:14px;background:#fbfcfe;}
+.compare .c h4{font-size:13.5px;font-weight:800;margin-bottom:6px;color:var(--brand-deep);}
+.compare .c p{font-size:13px;color:var(--muted);margin:0;}
+.quote{
+  border-left:4px solid var(--accent);background:#fff7f4;border-radius:0 12px 12px 0;
+  padding:14px 18px;margin:16px 0;font-size:14.2px;color:#6b3527;
+}
+.quote b{color:#b23d20;}
+
+/* guide steps */
+.steps{display:flex;flex-direction:column;gap:12px;counter-reset:st;}
+.step{display:flex;gap:14px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff;}
+.step::before{
+  counter-increment:st;content:counter(st,decimal-leading-zero);
+  flex:0 0 auto;font-size:13px;font-weight:800;color:#fff;
+  width:30px;height:30px;border-radius:9px;display:grid;place-items:center;
+  background:linear-gradient(140deg,var(--brand),#5c93ff);
+}
+.step b{display:block;font-size:14.5px;font-weight:700;margin-bottom:3px;}
+.step span{font-size:13px;color:var(--muted);}
+
+/* faq */
+.faq details{border:1px solid var(--line);border-radius:11px;padding:0;margin-bottom:10px;background:#fff;overflow:hidden;}
+.faq details[open]{border-color:#c6d8fb;box-shadow:0 4px 14px rgba(15,92,255,.07);}
+.faq summary{
+  list-style:none;cursor:pointer;padding:14px 44px 14px 16px;position:relative;
+  font-size:14.5px;font-weight:700;color:var(--ink);
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{
+  content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  font-size:19px;font-weight:400;color:var(--brand);line-height:1;
+}
+.faq details[open] summary::after{content:"–";}
+.faq .ans{padding:0 16px 15px;font-size:13.6px;color:#3b465c;line-height:1.75;}
+
+/* comments */
+.comments{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.cm{border:1px solid var(--line);border-radius:12px;padding:13px 14px;background:#fff;display:flex;flex-direction:column;gap:7px;}
+.cm .top{display:flex;align-items:center;gap:9px;}
+.cm .av{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:800;color:#fff;flex:0 0 auto;}
+.cm .who{font-size:13px;font-weight:700;}
+.cm .when{font-size:11px;color:var(--muted-2);margin-left:auto;}
+.cm p{font-size:13px;color:#3b465c;line-height:1.68;}
+.cm .likes{font-size:11.5px;color:var(--muted-2);}
+
+/* news */
+.news{display:flex;flex-direction:column;gap:2px;}
+.news-item{display:flex;gap:14px;padding:13px 8px;border-bottom:1px dashed var(--line);border-radius:9px;transition:background .14s;}
+.news-item:hover{background:#f7faff;}
+.news-item .date{flex:0 0 74px;font-size:12px;color:var(--muted-2);font-weight:600;padding-top:2px;}
+.news-item b{display:block;font-size:14.5px;font-weight:700;margin-bottom:2px;}
+.news-item span{font-size:12.8px;color:var(--muted);}
+
+/* rec tags */
+.recs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;}
+.rec{
+  display:flex;flex-direction:column;gap:3px;border:1px solid var(--line);border-radius:11px;
+  padding:12px 13px;background:#fbfcfe;transition:border-color .15s,background .15s;
+}
+.rec:hover{border-color:var(--brand);background:#f4f8ff;}
+.rec b{font-size:13.5px;font-weight:700;}
+.rec span{font-size:11.8px;color:var(--muted);line-height:1.55;}
+
+/* ---------- right sidebar ---------- */
+.col-side{display:flex;flex-direction:column;gap:20px;position:sticky;top:calc(var(--ann-h) + var(--head-h) + 20px);}
+.side-card{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow-s);}
+.side-card h3{font-size:13px;font-weight:800;letter-spacing:.06em;color:var(--muted);margin-bottom:12px;display:flex;align-items:center;gap:7px;}
+.side-card h3::before{content:"";width:4px;height:13px;border-radius:2px;background:var(--accent);}
+.rank{display:flex;flex-direction:column;gap:2px;}
+.rank li{display:flex;gap:10px;align-items:baseline;padding:8px 4px;border-radius:8px;transition:background .14s;}
+.rank li:hover{background:#f7faff;}
+.rank .no{flex:0 0 20px;font-size:12px;font-weight:800;color:var(--muted-2);font-style:italic;}
+.rank li:nth-child(-n+3) .no{color:var(--accent);}
+.rank .rt{min-width:0;}
+.rank b{display:block;font-size:13.5px;font-weight:700;line-height:1.4;}
+.rank span{font-size:11.5px;color:var(--muted-2);}
+.rank .hot{margin-left:auto;font-size:11px;font-weight:700;color:var(--ok);flex:0 0 auto;}
+.side-cta{
+  background:linear-gradient(160deg,#0d1830,#1d2a45);color:#e8eefb;border:none;
+  border-radius:var(--radius);padding:18px 16px;box-shadow:var(--shadow);
+}
+.side-cta h3{color:#9fc0ff;}
+.side-cta h3::before{background:#4ade80;}
+.side-cta p{font-size:12.8px;color:#adbbd3;margin-bottom:12px;line-height:1.65;}
+.side-cta .btn{width:100%;height:34px;font-size:13px;background:#2f6bff;color:#fff;}
+.side-cta .btn:hover{background:#4d84ff;}
+.side-list{display:flex;flex-direction:column;gap:9px;}
+.side-list a{display:flex;gap:9px;align-items:center;font-size:13px;color:var(--ink-2);font-weight:500;padding:5px 4px;border-radius:7px;transition:background .14s,color .14s;}
+.side-list a:hover{background:var(--brand-soft);color:var(--brand-deep);}
+.side-list .dot{width:6px;height:6px;border-radius:50%;background:var(--brand);flex:0 0 auto;}
+.no-result{display:none;font-size:13.5px;color:var(--muted);padding:16px;border:1px dashed var(--line);border-radius:10px;text-align:center;}
+.searching .no-result{display:block;}
+
+/* ---------- footer ---------- */
+.site-foot{background:#0b1220;color:#a9b7cf;margin-top:10px;padding:44px 0 26px;}
+.foot-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:30px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.1);}
+.foot-brand .brand{margin-bottom:12px;}
+.foot-brand .brand .name{color:#fff;}
+.foot-brand .brand .name em{color:#7fb0ff;}
+.foot-brand p{font-size:13px;line-height:1.75;color:#8fa1bf;max-width:34ch;}
+.foot-col h4{font-size:13px;color:#fff;font-weight:700;margin-bottom:12px;letter-spacing:.04em;}
+.foot-col a{display:block;font-size:13px;color:#95a6c2;padding:4px 0;transition:color .14s;}
+.foot-col a:hover{color:#fff;}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:20px;font-size:12px;color:#7385a3;}
+.foot-bottom .note{max-width:62ch;line-height:1.7;}
+
+/* ---------- responsive ---------- */
+@media (max-width:1180px){
+  .layout{grid-template-columns:168px minmax(0,1fr) 234px;gap:20px;}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .ov-facts{grid-template-columns:repeat(2,1fr);}
+  .recs{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr) 260px;}
+  .chan{display:none;}
+  .hero{padding:30px 24px;}
+  .hero-grid{grid-template-columns:1fr;gap:24px;}
+  .hero-visual{min-height:0;}
+  .float-card{position:static;width:auto;margin-top:14px;}
+  .main-nav{display:none;}
+  .nav-toggle{display:inline-flex;}
+  .cats{grid-template-columns:repeat(3,minmax(0,1fr));}
+}
+@media (max-width:820px){
+  .layout{grid-template-columns:minmax(0,1fr);}
+  .col-side{position:static;display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .updates{grid-template-columns:1fr;}
+  .comments{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:740px){
+  :root{--head-h:60px;}
+  .site-head .wrap{gap:12px;}
+  .brand .name{font-size:17px;}
+  .search input{width:120px;}
+  .search input:focus{width:150px;}
+  .head-tools .btn-primary{display:none;}
+  .container{padding:0 14px;}
+  .hero{padding:24px 18px 22px;border-radius:16px;}
+  .hero-stats{gap:18px;}
+  .hero-stats .s b{font-size:19px;}
+  .board{padding:18px 15px;}
+  .cards{grid-template-columns:1fr;}
+  .cats{grid-template-columns:1fr 1fr;}
+  .compare{grid-template-columns:1fr;}
+  .recs{grid-template-columns:1fr 1fr;}
+  .col-side{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr;}
+  .news-item .date{flex-basis:62px;}
+  .ov-facts{grid-template-columns:1fr 1fr;}
+  .announce .wrap{padding:0 14px;gap:10px;}
+  .announce a{display:none;}
+  .mobile-nav{display:none;}
+  .mobile-nav.open{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);padding:10px 14px;gap:2px;box-shadow:var(--shadow);}
+  .mobile-nav.open a{padding:10px;border-radius:8px;font-size:14px;}
+  .mobile-nav.open a:hover{background:var(--brand-soft);}
+  .site-head .wrap{position:relative;}
+}
+@media (max-width:420px){
+  .cats{grid-template-columns:1fr;}
+  .recs{grid-template-columns:1fr;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;}
+  html{scroll-behavior:auto;}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="announce">
+    <div class="wrap">
+      <span class="tag">更新</span>
+      <span class="txt">本周新增 <b>12 部</b> 高清原创纪录片与 5 支城市短片，<b>《雾港夜航》第 4 集</b> 今日 20:00 上线</span>
+      <a href="/#updates">查看更新清单 →</a>
+    </div>
+  </div>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="/#" aria-label="一区高淸一区 首页">
+        <svg class="mark" viewBox="0 0 40 40" role="img" aria-label="一区高淸一区图形标志">
+          <rect x="1" y="1" width="38" height="38" rx="11" fill="#0f5cff"/>
+          <path d="M13 11.5v17l14-8.5-14-8.5Z" fill="#fff"/>
+          <circle cx="30.5" cy="10.5" r="3" fill="#ff5a3c"/>
+        </svg>
+        <span class="name">一区高淸<em>一区</em></span>
+      </a>
+      <nav class="main-nav" aria-label="主导航">
+        <a href="/#featured">精选片单</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#categories">频道分类</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">观看指南</a>
+        <a href="/#comments">社区评论</a>
+        <a href="/#news">行业资讯</a>
+      </nav>
+      <div class="head-tools">
+        <form class="search" role="search" onsubmit="return false;">
+          <label for="q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">搜索条目</label>
+          <input id="q" type="search" placeholder="搜索片名 / 频道" autocomplete="off">
+          <button type="button" aria-label="搜索" onclick="runSearch()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+          </button>
+        </form>
+        <button class="btn btn-primary" type="button" onclick="location.hash='featured'">开始观看</button>
+        <button class="nav-toggle" type="button" aria-label="展开导航菜单" aria-expanded="false" onclick="toggleNav(this)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1b2230" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+      <nav class="mobile-nav" aria-label="移动端导航">
+        <a href="/#featured">精选片单</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#categories">频道分类</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">观看指南</a>
+        <a href="/#comments">社区评论</a>
+        <a href="/#news">行业资讯</a>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<div class="container">
+  <div class="layout">
+
+    <!-- 首屏 -->
+    <section class="hero" aria-labelledby="h1">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow"><span class="dot"></span>高清原创影像社区 · 每周三更新</span>
+          <h1 id="h1">一区高淸一区</h1>
+          <p class="lede">一个专注 <b>1080P 以上画质</b> 的中文影像社区：纪录片、城市短片、美食纪行与创作者访谈都在这里首播，所有片源标注拍摄设备、调色版本与时长，方便你按兴趣直接挑片。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/#featured">浏览精选片单</a>
+            <a class="btn btn-outline" href="/#updates">看今日更新</a>
+          </div>
+          <div class="hero-stats">
+            <div class="s"><b>1,860+</b><span>在架高清条目</span></div>
+            <div class="s"><b>42</b><span>签约创作团队</span></div>
+            <div class="s"><b>96.4%</b><span>片源画质达标率</span></div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="screen">
+            <div class="frame"></div>
+            <div class="scan"></div>
+            <span class="badge-hd">4K · HDR</span>
+            <div class="cap"><b>《雾港夜航》第 3 集</b><span>夜航船上的十二小时 · 52 分钟</span></div>
+            <div class="bar"><i></i><i style="width:16%"></i><i style="width:10%"></i></div>
+          </div>
+          <div class="float-card">
+            <div class="t">今日上新</div>
+            <div class="v">《山脊线以北》<br><em>第 2 季 · 全 6 集</em></div>
+            <div class="mini"><span class="pulse"></span>18 分钟前完成上线审核</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左频道索引 -->
+    <aside class="chan" aria-label="频道索引">
+      <h2>频道索引</h2>
+      <ul>
+        <li><a href="/#categories">纪录片 <span class="n">412</span></a></li>
+        <li><a href="/#categories">城市影像 <span class="n">286</span></a></li>
+        <li><a href="/#categories">美食纪行 <span class="n">238</span></a></li>
+        <li><a href="/#categories">自然地理 <span class="n">204</span></a></li>
+        <li><a href="/#categories">人物访谈 <span class="n">176</span></a></li>
+        <li><a href="/#categories">影像教学 <span class="n">158</span></a></li>
+        <li><a href="/#categories">实验短片 <span class="n">142</span></a></li>
+        <li><a href="/#categories">幕后制作 <span class="n">98</span></a></li>
+        <li><a href="/#categories">旅行长片 <span class="n">86</span></a></li>
+        <li><a href="/#categories">档案修复 <span class="n">60</span></a></li>
+      </ul>
+      <div class="chan-note">
+        画质分级：<b>A 级</b> 4K HDR ｜ <b>B 级</b> 1080P ｜ <b>C 级</b> 修复版。所有条目均标注设备与调色版本。
+      </div>
+    </aside>
+
+    <!-- 主内容 -->
+    <main class="col-main">
+
+      <!-- 1 主题概览 -->
+      <section class="board overview" id="overview" aria-labelledby="ov-h">
+        <div class="board-hd">
+          <h2 id="ov-h">高清原创影像的现状与看点</h2>
+          <span class="sub">截至 2026 年 11 月 25 日</span>
+        </div>
+        <p>一区高淸一区所代表的，是近几年在中文互联网上快速成型的一类内容形态：由独立团队或小工作室拍摄、以高清规格交付、带有明确作者风格的纪实影像。它既不同于平台自制的大型综艺，也区别于随手拍摄的短视频，核心差别在于<span class="hl">拍摄设备、调色流程与叙事结构都有完整记录</span>，观众可以按画质规格和技术参数来挑选。</p>
+        <p>目前站内内容大致分成四个方向。第一类是长线纪录片，单集 40 到 60 分钟，题材集中在城市变迁、手艺人日常与自然观察；第二类是城市短片，多为 8 到 15 分钟的观察式作品，节奏快、信息密度高；第三类是美食与旅行纪行，强调在地食材与路线可行性；第四类是影像教学与幕后，讲设备选择、布光和后期调色的具体做法。</p>
+        <p>值得关注的具体变化是，2026 年下半年以来，<b>4K HDR 交付比例从 31% 上升到 47%</b>，同时出现了一批以档案修复为卖点的老片重制项目，例如《江城旧影 1987》和《盐场纪事》的 4K 修复版。对观众来说，判断一部片子是否值得投入时间，除了题材，更该看它的拍摄周期、素材来源与后期说明——这些信息比评分更能反映成片质量。</p>
+        <div class="ov-facts">
+          <div class="f"><b>47%</b><span>4K HDR 交付占比</span></div>
+          <div class="f"><b>52 min</b><span>纪录片平均单集时长</span></div>
+          <div class="f"><b>11 天</b><span>城市短片平均拍摄周期</span></div>
+          <div class="f"><b>6 集</b><span>本季新片常见集数</span></div>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="board" id="featured" aria-labelledby="ft-h">
+        <div class="board-hd">
+          <h2 id="ft-h">精选片单：本周值得开的高清条目</h2>
+          <a class="link" href="/#updates">全部更新 →</a>
+        </div>
+        <div class="cards">
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/wugang-yehang01/400/300" width="400" height="300" loading="lazy" alt="雾港夜航纪录片封面，夜色中的货轮与港口灯">
+              <span class="type">纪录片</span><span class="score">9.1</span>
+            </div>
+            <div class="body">
+              <h3>雾港夜航</h3>
+              <p class="desc">跟拍一艘夜航货轮十二小时，从装货、离港到凌晨靠岸。全片用自然光与船舱实景拍摄，机舱噪声未做降噪处理，保留了现场质感。</p>
+              <div class="tags"><span class="tag">港口纪实</span><span class="tag">长镜头</span><span class="tag warm">4K HDR</span></div>
+              <div class="meta"><span>更新至第 3 集</span><b>热度 9.4k</b></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/shanji-xian02/400/300" width="400" height="300" loading="lazy" alt="山脊线以北自然纪录片封面，高山雪线与云海">
+              <span class="type">自然地理</span><span class="score">9.3</span>
+            </div>
+            <div class="body">
+              <h3>山脊线以北</h3>
+              <p class="desc">第二季把机位架到海拔 3800 米的垭口，记录雪线上下动植物的季节性迁移。每集片尾附拍摄坐标与气象数据，适合对照地理资料看。</p>
+              <div class="tags"><span class="tag">高山生态</span><span class="tag">延时摄影</span><span class="tag warm">全 6 集</span></div>
+              <div class="meta"><span>今日上线</span><b>热度 8.7k</b></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/jiangcheng-jiuying03/400/300" width="400" height="300" loading="lazy" alt="江城旧影1987修复版封面，八十年代江边码头黑白影像">
+              <span class="type">档案修复</span><span class="score">8.9</span>
+            </div>
+            <div class="body">
+              <h3>江城旧影 1987</h3>
+              <p class="desc">用 16mm 胶片素材重制的城市档案片，修复团队逐帧去噪并重建色彩。片中出现的码头、轮渡与老街，多数已不存在，具有文献价值。</p>
+              <div class="tags"><span class="tag">城市档案</span><span class="tag">胶片修复</span><span class="tag warm">4K</span></div>
+              <div class="meta"><span>11 月 18 日上线</span><b>热度 7.2k</b></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/shichang-zaochen04/400/300" width="400" height="300" loading="lazy" alt="菜市场早晨美食纪行封面，清晨摊位与冒着热气的蒸笼">
+              <span class="type">美食纪行</span><span class="score">8.8</span>
+            </div>
+            <div class="body">
+              <h3>菜市场早晨</h3>
+              <p class="desc">连续七天记录同一家菜市场从四点半开市到收摊的全过程，重点拍摊主的备货节奏与早市早餐。附有每道小吃的做法与价格。</p>
+              <div class="tags"><span class="tag">市井美食</span><span class="tag">早市</span><span class="tag">1080P</span></div>
+              <div class="meta"><span>更新至第 5 集</span><b>热度 7.9k</b></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/dengguang-bu05/400/300" width="400" height="300" loading="lazy" alt="灯光笔记影像教学封面，摄影棚内布光设备与灯架">
+              <span class="type">影像教学</span><span class="score">9.0</span>
+            </div>
+            <div class="body">
+              <h3>灯光笔记：单灯人像的六种用法</h3>
+              <p class="desc">用一支 LED 灯演示顺光、侧逆光、轮廓光等六种布光方案，每种给出机位图和实拍对比。适合刚入手第一支常亮灯的创作者。</p>
+              <div class="tags"><span class="tag">布光教程</span><span class="tag">人像</span><span class="tag">幕后制作</span></div>
+              <div class="meta"><span>11 月 21 日上线</span><b>热度 6.8k</b></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/yanchang-jishi06/400/300" width="400" height="300" loading="lazy" alt="盐场纪事纪录片封面，盐田水面倒映天空与盐工身影">
+              <span class="type">纪录片</span><span class="score">8.6</span>
+            </div>
+            <div class="body">
+              <h3>盐场纪事</h3>
+              <p class="desc">记录一座即将停产的盐场最后一个晒盐季，从春晒到秋收。片中大量使用固定机位长镜头，配合盐工口述，节奏偏慢但信息扎实。</p>
+              <div class="tags"><span class="tag">手艺纪实</span><span class="tag">口述史</span><span class="tag warm">修复版</span></div>
+              <div class="meta"><span>11 月 12 日上线</span><b>热度 6.1k</b></div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="board" id="updates" aria-labelledby="up-h">
+        <div class="board-hd">
+          <h2 id="up-h">最新更新与今日上线</h2>
+          <span class="sub">按时间倒序 · 11 月 25 日</span>
+        </div>
+        <div class="updates">
+          <div class="upd"><span class="time">今天 20:00</span><div class="txt"><b>《雾港夜航》第 4 集</b><span>靠岸后的卸货与船员交接，时长 48 分钟</span></div><span class="pill new">首播</span></div>
+          <div class="upd"><span class="time">今天 14:20</span><div class="txt"><b>《山脊线以北》第二季全 6 集</b><span>一次性放出，附拍摄坐标文档</span></div><span class="pill new">全集</span></div>
+          <div class="upd"><span class="time">今天 10:05</span><div class="txt"><b>《菜市场早晨》第 6 集</b><span>收摊之后的摊位清理与次日备货</span></div><span class="pill">更新</span></div>
+          <div class="upd"><span class="time">昨天 21:10</span><div class="txt"><b>《灯光笔记》加更</b><span>新增双灯混合色温的实拍对照片段</span></div><span class="pill">加更</span></div>
+          <div class="upd"><span class="time">昨天 16:40</span><div class="txt"><b>《江城旧影 1987》修复说明</b><span>公布逐帧修复流程与原始胶片规格</span></div><span class="pill">资料</span></div>
+          <div class="upd"><span class="time">11 月 23 日</span><div class="txt"><b>《盐场纪事》4K 修复版</b><span>替换旧版片源，音轨重新混音</span></div><span class="pill">修复</span></div>
+          <div class="upd"><span class="time">11 月 21 日</span><div class="txt"><b>《城市十二时辰》先导片</b><span>新系列公布，正片 12 月上线</span></div><span class="pill">预告</span></div>
+          <div class="upd"><span class="time">11 月 19 日</span><div class="txt"><b>《手艺人》第三季开放预约</b><span>首批 4 位受访者名单已公布</span></div><span class="pill">预约</span></div>
+          <div class="upd"><span class="time">11 月 16 日</span><div class="txt"><b>创作者访谈第 12 期</b><span>对话《山脊线以北》摄影指导</span></div><span class="pill">访谈</span></div>
+          <div class="upd"><span class="time">11 月 12 日</span><div class="txt"><b>《盐场纪事》正片上架</b><span>全片 84 分钟，附盐场历史年表</span></div><span class="pill">上架</span></div>
+        </div>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="board" id="categories" aria-labelledby="cat-h">
+        <div class="board-hd">
+          <h2 id="cat-h">频道分类</h2>
+          <span class="sub">按题材与制作方式划分</span>
+        </div>
+        <div class="cats">
+          <a class="cat" href="/#featured"><b>纪录片</b><span>长线跟拍与口述史，单集 40 分钟以上</span><i>412 条 →</i></a>
+          <a class="cat" href="/#featured"><b>城市影像</b><span>街区观察、通勤与夜生活短片</span><i>286 条 →</i></a>
+          <a class="cat" href="/#featured"><b>美食纪行</b><span>市井小吃、菜市场与在地食材</span><i>238 条 →</i></a>
+          <a class="cat" href="/#featured"><b>自然地理</b><span>高山、湿地与海岸线的季节记录</span><i>204 条 →</i></a>
+          <a class="cat" href="/#featured"><b>人物访谈</b><span>创作者与手艺人的长对话</span><i>176 条 →</i></a>
+          <a class="cat" href="/#featured"><b>影像教学</b><span>布光、收音与调色的实操方法</span><i>158 条 →</i></a>
+          <a class="cat" href="/#featured"><b>实验短片</b><span>非常规叙事与影像实验作品</span><i>142 条 →</i></a>
+          <a class="cat" href="/#featured"><b>档案修复</b><span>老胶片与旧素材的高清重制</span><i>60 条 →</i></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="board deep" id="deep" aria-labelledby="dp-h">
+        <div class="board-hd">
+          <h2 id="dp-h">深度解析：高清纪实影像的类型差异与判断维度</h2>
+          <span class="sub">阅读约 8 分钟</span>
+        </div>
+
+        <p>同样标注“高清”，成片质量的差别可能非常大。理解这一点，需要先区分几个常被混用的类型，再掌握一套可操作的判断维度。以下讨论的对象都是具体作品，不涉及平台运营层面。</p>
+
+        <h3>一、观察式纪录片与主题式纪录片的差别</h3>
+        <p>观察式纪录片不设旁白、不引导情绪，摄影机跟着人物走，靠长时间等待捕捉真实反应，《雾港夜航》是典型代表：全片几乎没有解说词，观众靠现场声音和字幕理解流程。主题式纪录片则先定观点，再用素材支撑，《盐场纪事》就属于这一类，它把盐场停产放进产业变迁的框架里，口述史占比更高。</p>
+        <p>两者的判断标准不同。观察式看的是素材厚度与拍摄周期，周期越短、场景越单一，成片越容易单薄；主题式看的是素材与论点的匹配度，如果通篇只有情绪没有事实，就值得警惕。</p>
+
+        <h3>二、城市短片与旅行长片的取舍</h3>
+        <p>城市短片通常 8 到 15 分钟，拍摄周期在两周内，优势是节奏紧凑、信息密度高，适合通勤或碎片时间；缺点是很少深入人物背景。旅行长片往往 30 分钟以上，需要交代路线、交通与住宿，观赏门槛更高，但对计划出行的观众实用性更强。</p>
+        <div class="compare">
+          <div class="c"><h4>城市短片</h4><p>时长 8—15 分钟，重观察与氛围，多在固定街区拍摄，适合快速了解一个地方的气质。</p></div>
+          <div class="c"><h4>旅行长片</h4><p>时长 30 分钟以上，重路线与实用信息，通常附交通、住宿与季节建议，适合出行前参考。</p></div>
+        </div>
+
+        <h3>三、判断一部高清条目是否值得投入时间的四个维度</h3>
+        <ul class="bullets">
+          <li><b>拍摄周期与素材量</b>：跟拍三个月以上的作品通常有更完整的人物弧线；两周速成的短片更适合看氛围而非故事。</li>
+          <li><b>画质规格是否名副其实</b>：注意是否标注原生 4K 还是后期放大，HDR 版本是否有对应的调色说明。</li>
+          <li><b>声音处理方式</b>：现场同期声、后期拟音与环境声重建是三种完全不同的做法，直接影响沉浸感。</li>
+          <li><b>附加资料</b>：拍摄坐标、设备清单、历史年表这类附带内容，往往比正片更能说明制作方的认真程度。</li>
+        </ul>
+
+        <h3>四、档案修复类作品的特殊门槛</h3>
+        <p>修复版不是简单地把旧片放大。《江城旧影 1987》的做法是先做胶片清洁与逐帧扫描，再分区去噪，最后重建色彩。观众判断修复质量，可以看三个地方：暗部是否有明显噪点块、运动镜头是否出现拖影、原始画幅比例是否被裁切。如果修复方公布了原始胶片规格与扫描设备，可信度会高很多。</p>
+        <div class="quote"><b>一个实用经验：</b>修复类条目如果只写“高清重制”而不交代素材来源与扫描规格，通常只是做了算法放大，观感提升有限。</div>
+
+        <h3>五、影像教学类内容该怎么用</h3>
+        <p>教学片的价值在于可复现。《灯光笔记：单灯人像的六种用法》之所以被反复引用，是因为每种布光都给了机位图、灯位距离与实拍对比，观众可以照着重拍一遍。相反，只讲概念不给参数的教程，看完很难落到实际操作。选择教学类内容时，优先看它是否提供可验证的参数与失败案例。</p>
+      </section>
+
+      <!-- 6 体验指南 -->
+      <section class="board" id="guide" aria-labelledby="gd-h">
+        <div class="board-hd">
+          <h2 id="gd-h">观看指南：从哪部开始，怎么安排顺序</h2>
+          <span class="sub">按投入时间与兴趣方向给建议</span>
+        </div>
+        <div class="steps">
+          <div class="step"><div><b>第一次接触，先看 15 分钟以内的城市短片</b><span>例如《城市十二时辰》先导片。时长短、信息集中，能快速判断自己是否适应无旁白的观察式叙事。</span></div></div>
+          <div class="step"><div><b>确认喜欢纪实节奏后，进入单集 40 分钟以上的纪录片</b><span>从《雾港夜航》第 1 集开始，按播出顺序看，人物关系更连贯；也可以直接看第 3 集，独立性强。</span></div></div>
+          <div class="step"><div><b>对画面技术要求高，优先挑标注原生 4K 与 HDR 调色的条目</b><span>《山脊线以北》第二季与《盐场纪事》修复版都属此类，前者胜在延时摄影，后者胜在胶片质感。</span></div></div>
+          <div class="step"><div><b>想动手拍，再进入影像教学与幕后制作</b><span>先看《灯光笔记》建立布光概念，再看创作者访谈了解实际拍摄中的取舍，顺序反过来容易只看热闹。</span></div></div>
+          <div class="step"><div><b>出行前参考旅行长片，别只看城市短片</b><span>旅行长片会交代交通、季节与住宿，城市短片更多是氛围呈现，两者用途不同。</span></div></div>
+        </div>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="board faq" id="faq" aria-labelledby="fq-h">
+        <div class="board-hd">
+          <h2 id="fq-h">常见问题</h2>
+          <span class="sub">围绕条目选择与画质判断</span>
+        </div>
+
+        <details open>
+          <summary>一区高淸一区里的纪录片一般多久更新一集？</summary>
+          <div class="ans">长线跟拍类多为周更，例如《雾港夜航》固定在周三 20:00 更新一集；季播作品如《山脊线以北》则一次性放出全季。城市短片和教学类更新不固定，通常按制作完成时间上架。</div>
+        </details>
+        <details>
+          <summary>原生 4K 和后期放大到 4K 有什么区别，怎么分辨？</summary>
+          <div class="ans">原生 4K 是拍摄时就用 4K 及以上分辨率记录，细节扎实；后期放大是从 1080P 素材插值，画面偏软。分辨方法是看条目页的拍摄设备与素材规格说明，正规条目会写明原生分辨率与调色版本，未标注的多为后期放大。</div>
+        </details>
+        <details>
+          <summary>《雾港夜航》和《盐场纪事》都属于纪录片，观看顺序有讲究吗？</summary>
+          <div class="ans">两者类型不同，没有顺序依赖。《雾港夜航》是观察式，几乎无旁白，适合先建立对纪实节奏的适应；《盐场纪事》是主题式，口述史密集，更适合对产业变迁题材感兴趣的观众。</div>
+        </details>
+        <details>
+          <summary>第一次看这类高清纪实影像，从哪一部开始比较好？</summary>
+          <div class="ans">建议从 15 分钟以内的城市短片入手，比如《城市十二时辰》先导片；如果时间充裕，直接看《雾港夜航》第 1 集也合适，它的叙事门槛不高，靠现场声音推进。</div>
+        </details>
+        <details>
+          <summary>档案修复类的片子，评判标准通常看哪几点？</summary>
+          <div class="ans">主要看三处：暗部噪点是否成块、运动镜头有无拖影、原始画幅是否被裁切。另外看修复方是否公布原始胶片规格和扫描设备，信息越完整，可信度越高。</div>
+        </details>
+        <details>
+          <summary>影像教学类内容适合什么基础的人看？</summary>
+          <div class="ans">《灯光笔记》系列面向刚入手第一支常亮灯的创作者，讲解以单灯、双灯为主，不需要复杂器材；如果你已经有成熟布光习惯，可以跳到创作者访谈，看实际项目中如何取舍。</div>
+        </details>
+      </section>
+
+      <!-- 8 用户评论 -->
+      <section class="board" id="comments" aria-labelledby="cm-h">
+        <div class="board-hd">
+          <h2 id="cm-h">社区评论</h2>
+          <span class="sub">来自条目页的真实讨论</span>
+        </div>
+        <div class="comments">
+          <div class="cm"><div class="top"><span class="av" style="background:#0f5cff">林</span><span class="who">林间慢跑</span><span class="when">11 月 25 日</span></div><p>《雾港夜航》第 3 集的机舱段落太真实了，噪声一点没修，反而让人信服。就是节奏确实慢，得留出整块时间看。</p><div class="likes">赞同 128</div></div>
+          <div class="cm"><div class="top"><span class="av" style="background:#ff5a3c">陈</span><span class="who">陈小满</span><span class="when">11 月 25 日</span></div><p>《山脊线以北》第二季的延时摄影很稳，雪线变化那段看了两遍。片尾给坐标这点特别好，能对着地图找。</p><div class="likes">赞同 96</div></div>
+          <div class="cm"><div class="top"><span class="av" style="background:#0f9d6b">周</span><span class="who">周末不加班</span><span class="when">11 月 24 日</span></div><p>《菜市场早晨》更适合当早餐时看，一集一个摊位，不费脑子。价格信息给得实在，比很多美食节目靠谱。</p><div class="likes">赞同 74</div></div>
+          <div class="cm"><div class="top"><span class="av" style="background:#c98a12">许</span><span class="who">许工拍片</span><span class="when">11 月 24 日</span></div><p>《灯光笔记》单灯那期我照着复现了一遍，机位图和灯距很有用。缺点是没讲反光板配合，希望后面补上。</p><div class="likes">赞同 63</div></div>
+          <div class="cm"><div class="top"><span class="av" style="background:#6b4ce6">吴</span><span class="who">吴桐树下</span><span class="when">11 月 23 日</span></div><p>《江城旧影 1987》修复得不错，暗部干净。不过原始画幅好像裁过一点，对比老照片能看出来。</p><div class="likes">赞同 58</div></div>
+          <div class="cm"><div class="top"><span class="av" style="background:#0f5cff">何</span><span class="who">何处不相逢</span><span class="when">11 月 23 日</span></div><p>《盐场纪事》节奏偏慢，前二十分钟差点弃了，看到口述部分才进入状态。建议把它当文献片看，别当娱乐片。</p><div class="likes">赞同 41</div></div>
+          <div class="cm"><div class="top"><span class="av" style="background:#ff5a3c">苏</span><span class="who">苏打气泡</span><span class="when">11 月 22 日</span></div><p>城市短片里《夜班公交》挺打动我的，就是太短了，八分钟意犹未尽。希望出个加长版。</p><div class="likes">赞同 39</div></div>
+          <div class="cm"><div class="top"><span class="av" style="background:#0f9d6b">郑</span><span class="who">郑在调试</span><span class="when">11 月 22 日</span></div><p>画质分级这个做法挺实用，A 级和 B 级差别确实明显。就是有些条目标注的调色版本我不太懂，希望出个说明。</p><div class="likes">赞同 33</div></div>
+          <div class="cm"><div class="top"><span class="av" style="background:#c98a12">白</span><span class="who">白露未晞</span><span class="when">11 月 21 日</span></div><p>《山脊线以北》第一季和第二季对比着看，能明显感觉拍摄团队成熟了，运镜稳很多，素材也更克制。</p><div class="likes">赞同 30</div></div>
+          <div class="cm"><div class="top"><span class="av" style="background:#6b4ce6">罗</span><span class="who">罗盘指向北</span><span class="when">11 月 20 日</span></div><p>《城市十二时辰》先导片有点散，可能正片会好。先观望，等 12 月上线再看。</p><div class="likes">赞同 22</div></div>
+          <div class="cm"><div class="top"><span class="av" style="background:#0f5cff">沈</span><span class="who">沈默拍摄中</span><span class="when">11 月 19 日</span></div><p>创作者访谈第 12 期信息量很大，讲到了高山拍摄的电池保温问题，这种细节很少人提。</p><div class="likes">赞同 19</div></div>
+          <div class="cm"><div class="top"><span class="av" style="background:#ff5a3c">韩</span><span class="who">韩梅梅看片</span><span class="when">11 月 18 日</span></div><p>美食纪行类希望多拍点夜宵摊，早市虽然好，但接地气的深夜档更有烟火气。</p><div class="likes">赞同 17</div></div>
+          <div class="cm"><div class="top"><span class="av" style="background:#0f9d6b">曹</span><span class="who">曹小舟</span><span class="when">11 月 17 日</span></div><p>《盐场纪事》修复版音轨重混后，海浪声层次清楚多了，旧版听着发闷。</p><div class="likes">赞同 15</div></div>
+          <div class="cm"><div class="top"><span class="av" style="background:#c98a12">杜</span><span class="who">杜若衡</span><span class="when">11 月 16 日</span></div><p>建议教学类多出几期收音内容，现在布光讲得多，声音这块几乎是空白。</p><div class="likes">赞同 13</div></div>
+        </div>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="board" id="news" aria-labelledby="nw-h">
+        <div class="board-hd">
+          <h2 id="nw-h">相关资讯</h2>
+          <span class="sub">近一个月影像社区动态</span>
+        </div>
+        <div class="news">
+          <div class="news-item"><span class="date">11 月 25 日</span><div><b>《山脊线以北》第二季一次性放出全 6 集</b><span>片方同步公开拍摄坐标文档与气象记录，供地理爱好者对照。</span></div></div>
+          <div class="news-item"><span class="date">11 月 22 日</span><div><b>4K HDR 交付比例升至 47%，修复类项目增多</b><span>本月新增修复项目 6 个，多数集中在城市档案题材。</span></div></div>
+          <div class="news-item"><span class="date">11 月 21 日</span><div><b>《灯光笔记》新增双灯混合色温实拍对比</b><span>补充了 3200K 与 5600K 混用的三种方案，附色温对照表。</span></div></div>
+          <div class="news-item"><span class="date">11 月 19 日</span><div><b>《手艺人》第三季开放预约，首批受访者公布</b><span>涉及竹编、铜器与木版年画三个方向，预计 12 月中上线。</span></div></div>
+          <div class="news-item"><span class="date">11 月 16 日</span><div><b>创作者访谈第 12 期上线，对话高山摄影指导</b><span>内容涵盖电池保温、延时构图与高原拍摄节奏安排。</span></div></div>
+          <div class="news-item"><span class="date">11 月 12 日</span><div><b>《盐场纪事》正片上架，附盐场历史年表</b><span>全片 84 分钟，结尾附 1958 年以来的产量数据图。</span></div></div>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="board" id="related" aria-labelledby="rl-h">
+        <div class="board-hd">
+          <h2 id="rl-h">相关推荐：延伸方向</h2>
+          <span class="sub">按题材与技术方向延伸</span>
+        </div>
+        <div class="recs">
+          <a class="rec" href="/#deep"><b>胶片修复流程</b><span>从清洁到扫描的完整步骤</span></a>
+          <a class="rec" href="/#deep"><b>高山拍摄设备清单</b><span>低温环境下的电池与存储方案</span></a>
+          <a class="rec" href="/#featured"><b>夜班公交</b><span>城市短片，记录末班车乘客</span></a>
+          <a class="rec" href="/#featured"><b>手艺人第三季</b><span>竹编、铜器与木版年画</span></a>
+          <a class="rec" href="/#guide"><b>无旁白叙事入门</b><span>观察式纪录片的观看方法</span></a>
+          <a class="rec" href="/#featured"><b>菜市场早晨</b><span>七天跟拍同一市场</span></a>
+          <a class="rec" href="/#deep"><b>HDR 调色版本说明</b><span>如何看懂条目页技术标注</span></a>
+          <a class="rec" href="/#featured"><b>城市十二时辰</b><span>先导片已上线，正片 12 月</span></a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右侧辅助栏 -->
+    <aside class="col-side" aria-label="辅助栏">
+      <div class="side-card">
+        <h3>本周热榜</h3>
+        <ol class="rank">
+          <li><span class="no">01</span><div class="rt"><b>雾港夜航</b><span>纪录片 · 更新至第 3 集</span></div><span class="hot">9.4k</span></li>
+          <li><span class="no">02</span><div class="rt"><b>山脊线以北 第二季</b><span>自然地理 · 全 6 集</span></div><span class="hot">8.7k</span></li>
+          <li><span class="no">03</span><div class="rt"><b>菜市场早晨</b><span>美食纪行 · 更新至第 5 集</span></div><span class="hot">7.9k</span></li>
+          <li><span class="no">04</span><div class="rt"><b>江城旧影 1987</b><span>档案修复 · 4K</span></div><span class="hot">7.2k</span></li>
+          <li><span class="no">05</span><div class="rt"><b>灯光笔记</b><span>影像教学 · 加更</span></div><span class="hot">6.8k</span></li>
+          <li><span class="no">06</span><div class="rt"><b>盐场纪事</b><span>纪录片 · 修复版</span></div><span class="hot">6.1k</span></li>
+          <li><span class="no">07</span><div class="rt"><b>夜班公交</b><span>城市影像 · 8 分钟</span></div><span class="hot">5.4k</span></li>
+          <li><span class="no">08</span><div class="rt"><b>手艺人 第三季</b><span>人物访谈 · 预约中</span></div><span class="hot">4.9k</span></li>
+        </ol>
+      </div>
+
+      <div class="side-card side-cta">
+        <h3>创作者入驻</h3>
+        <p>如果你有完整的高清纪实作品，可提交样片与技术说明，审核周期约 7 个工作日。</p>
+        <button class="btn" type="button" onclick="location.hash='news'">查看提交要求</button>
+      </div>
+
+      <div class="side-card">
+        <h3>技术标注说明</h3>
+        <div class="side-list">
+          <a href="/#deep"><span class="dot"></span>A 级：原生 4K HDR</a>
+          <a href="/#deep"><span class="dot"></span>B 级：1080P 原生</a>
+          <a href="/#deep"><span class="dot"></span>C 级：修复与重制版</a>
+          <a href="/#deep"><span class="dot"></span>声音：同期 / 拟音 / 重建</a>
+        </div>
+      </div>
+
+      <div class="side-card">
+        <h3>快捷入口</h3>
+        <div class="side-list">
+          <a href="/#featured"><span class="dot"></span>精选片单</a>
+          <a href="/#updates"><span class="dot"></span>今日更新</a>
+          <a href="/#categories"><span class="dot"></span>频道分类</a>
+          <a href="/#guide"><span class="dot"></span>观看指南</a>
+          <a href="/#comments"><span class="dot"></span>社区评论</a>
+        </div>
+      </div>
+
+      <div class="no-result" id="noResult">未找到匹配的条目，换个片名或频道词试试。</div>
+    </aside>
+
+  </div>
+</div>
+
+<footer class="site-foot">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand">
+          <svg class="mark" viewBox="0 0 40 40" role="img" aria-label="一区高淸一区图形标志">
+            <rect x="1" y="1" width="38" height="38" rx="11" fill="#1d4ed8"/>
+            <path d="M13 11.5v17l14-8.5-14-8.5Z" fill="#fff"/>
+            <circle cx="30.5" cy="10.5" r="3" fill="#ff5a3c"/>
+          </svg>
+          <span class="name">一区高淸<em>一区</em></span>
+        </div>
+        <p>专注 1080P 以上画质的中文原创影像社区，提供纪录片、城市短片、美食纪行与影像教学的条目信息与观看指引。</p>
+      </div>
+      <div class="foot-col">
+        <h4>内容频道</h4>
+        <a href="/#categories">纪录片</a>
+        <a href="/#categories">城市影像</a>
+        <a href="/#categories">美食纪行</a>
+        <a href="/#categories">自然地理</a>
+      </div>
+      <div class="foot-col">
+        <h4>发现内容</h4>
+        <a href="/#featured">精选片单</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">观看指南</a>
+      </div>
+      <div class="foot-col">
+        <h4>社区</h4>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#related">延伸推荐</a>
+        <a href="/#faq">常见问题</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="note">页面内条目名称、评分、热度与更新时间为内容展示示例，日期以 2026 年 11 月 25 日为基准。画质分级与技术标注仅用于说明条目属性。</span>
+      <span>© 2026 一区高淸一区 · 内容展示页</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleNav(btn){
+  var nav = document.querySelector('.mobile-nav');
+  if(!nav) return;
+  var open = nav.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+function runSearch(){
+  var q = (document.getElementById('q').value || '').trim().toLowerCase();
+  var items = document.querySelectorAll('.card, .upd, .news-item, .rec, .cm, .cat, .rank li');
+  var found = 0;
+  if(!q){
+    items.forEach(function(el){ el.style.display = ''; });
+    var nr = document.getElementById('noResult');
+    if(nr) nr.style.display = 'none';
+    return;
+  }
+  items.forEach(function(el){
+    var text = (el.textContent || '').toLowerCase();
+    var hit = text.indexOf(q) !== -1;
+    el.style.display = hit ? '' : 'none';
+    if(hit) found++;
+  });
+  var nr = document.getElementById('noResult');
+  if(nr) nr.style.display = found ? 'none' : 'block';
+}
+document.getElementById('q').addEventListener('input', runSearch);
+</script>
+</body>
+                </html>
